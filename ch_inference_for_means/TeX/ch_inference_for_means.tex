@@ -12,7 +12,8 @@ Chapter~\ref{foundationsForInference} introduced a framework for statistical inf
 
 
 %__________________
-\section{One-sample means with the $t$-distribution}
+%\section{One-sample means with the $t$-distribution}
+\section[One-sample means with the $t$-distribution]{One-sample means with the $t$-distribution \sectionvideohref{coursera_video-t_distribution} \sectionvideohref{coursera_video-inf_for_mean}}
 \label{oneSampleMeansWithTDistribution}
 
 We required a large sample in Chapter~\ref{foundationsForInference} for two reasons:
@@ -305,7 +306,7 @@ To help us remember to use the $t$-distribution, we use a $T$ to represent the t
 
 
 %__________________
-\section{Paired data}
+\section[Paired data]{Paired data \sectionvideohref{coursera_video-inf_paired_means}}
 \label{pairedData}
 
 \index{paired data|(}
@@ -391,7 +392,9 @@ $$SE_{\bar{x}_{diff}} = \frac{s_{diff}}{\sqrt{n_{diff}}} = \frac{14.26}{\sqrt{73
 To visualize the p-value, the sampling distribution of $\bar{x}_{diff}$ is drawn as though $H_0$ is true, which is shown in Figure~\ref{textbooksS10HTTails}. The p-value is represented by the two (very) small tails.
 
 To find the tail areas, we compute the test statistic, which is the T-score of $\bar{x}_{diff}$ under the null condition that the actual mean difference is 0:
-$$T = \frac{\bar{x}_{diff} - 0}{SE_{x_{diff}}} = \frac{12.76 - 0}{1.67} = 7.59$$
+\begin{align*}
+T = \frac{\bar{x}_{diff} - 0}{SE_{x_{diff}}} = \frac{12.76 - 0}{1.67} = 7.65
+\end{align*}
 The degrees of freedom are $df = 73 - 1 = 72$. If we examined Appendix~\vref{tDistributionTable}, we would see that this value is larger than any in the 70 df row (we round down for $df$ when using the table), meaning the two-sided p-value is less than 0.01. If we used statistical software, we would find the p-value is less than 1-in-10 billion! Because the p-value is less than 0.05, we reject the null hypothesis. We have found convincing evidence that Amazon was, on average, cheaper than the UCLA bookstore for UCLA course textbooks.
 \end{example}
 
@@ -415,7 +418,7 @@ We are 95\% confident that Amazon is, on average, between \$9.44 and \$16.08 che
 
 
 %__________________
-\section{Difference of two means}
+\section[Difference of two means]{Difference of two means \sectionvideohref{coursera_video-inf_two_means}}
 \label{differenceOfTwoMeans}
 
 {
@@ -517,10 +520,10 @@ We will use the sample difference and the standard error for that point estimate
 \end{align*}
 Using $df = 8$, we can identify the appropriate $t^{\star}_{df} = t^{\star}_{8}$ for a 95\% confidence interval as 2.31. Finally, we can enter the values into the confidence interval formula:\textC{\vspace{-1mm}}
 \begin{align*}
-\text{point estimate} \ \pm\ z^{\star}SE \quad\rightarrow\quad
-7.83 \ \pm\ 2.31\times 1.95 \quad\rightarrow\quad (3.38, 12.38)
+\text{point estimate} \ \pm\ t^{\star}SE \quad\rightarrow\quad
+7.83 \ \pm\ 2.31\times 1.95 \quad\rightarrow\quad (3.32, 12.34)
 \end{align*}
-We are 95\% confident that embryonic stem cells improve the heart's pumping function in sheep that have suffered a heart attack by 3.38\% to 12.38\%.
+We are 95\% confident that embryonic stem cells improve the heart's pumping function in sheep that have suffered a heart attack by 3.32\% to 12.34\%.
 \end{example}
 
 \index{data!stem cells, heart function|)}
@@ -765,7 +768,7 @@ The benefits of pooling the standard deviation are realized through obtaining a 
 
 
 %__________________
-\section[Power calculations for a difference of means (special topic)]{Power calculations for a difference of means\\ (special topic)}
+\section[Power calculations for a difference of means (special topic)]{Power calculations for a difference of means\\ (special topic) \sectionvideohref{coursera_video-power}}
 \label{PowerForDifferenceOfTwoMeans}
 
 Often times in experiment planning, there are two competing considerations:
@@ -950,7 +953,7 @@ Power calculations for expensive or risky experiments are critical. However, wha
 
 
 %__________________
-\section[Comparing many means with ANOVA (special topic)]{Comparing many means with ANOVA\\(special topic)}
+\section[Comparing many means with ANOVA (special topic)]{Comparing many means with ANOVA\\(special topic) \sectionvideohref{coursera_video-anova_intro} \sectionvideohref{coursera_video-anova_conditions} \sectionvideohref{coursera_video-mult_comparison}}
 \label{anovaAndRegrWithCategoricalVariables}
 
 \index{analysis of variance (ANOVA)|(}

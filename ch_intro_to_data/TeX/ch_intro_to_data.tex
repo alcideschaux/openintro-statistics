@@ -78,7 +78,7 @@ Total				& 46		& 405	&&	73	& 378 \\
 \end{table}
 
 \begin{exercise}
-Of the 224 patients in the treatment group, 45 had a stroke by the end of the first year. Using these two numbers, compute the proportion of patients in the treatment group who had a stroke by the end of their first year. (Please note: answers to all in-text exercises are provided using footnotes.)\footnote{The proportion of the 224 patients who had a stroke within 365 days: $45/224 = 0.20$.}
+Of the 224 patients in the treatment group, 45 had a stroke by the end of the first year. Using these two numbers, compute the proportion of patients in the treatment group who had a stroke by the end of their first year. (Please note: answers to all Guided Practice exercises are provided using footnotes.)\footnote{The proportion of the 224 patients who had a stroke within 365 days: $45/224 = 0.20$.}
 \end{exercise}
 
 We can compute summary statistics from the table. A \term{summary statistic} is a single number summarizing a large amount of data.\footnote{Formally, a summary statistic is a value computed from the data. Some summary statistics are more useful than others.} For instance, the primary results of the study after 1~year could be described by two summary statistics: the proportion of people who had a stroke in the treatment and control groups.
@@ -242,7 +242,7 @@ The number of siblings and student height represent numerical variables. Because
 \end{example}
 
 \begin{exercise} \index{data!stroke}
-Consider the variables \var{group} and \var{outcome} (at 30 days) from the stent study in Section~\ref{basicExampleOfStentsAndStrokes}. Are these numerical or categorical variables?\footnote{There are only two possible values for each variable, and in both cases they describe categories. Thus, each is categorical variables.}
+Consider the variables \var{group} and \var{outcome} (at 30 days) from the stent study in Section~\ref{basicExampleOfStentsAndStrokes}. Are these numerical or categorical variables?\footnote{There are only two possible values for each variable, and in both cases they describe categories. Thus, each is a categorical variable.}
 \end{exercise}
 
 \subsection{Relationships between variables}
@@ -443,7 +443,7 @@ In general, association does not imply causation, and causation can only be infe
 
 
 %%%%%
-\section[Observational studies and sampling strategies]{Observational studies and sampling strategies \sectionvideohref{youtube-n1xSeGPGQEg&list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8}}
+\section[Observational studies and sampling strategies]{Observational studies and sampling strategies \sectionvideohref{youtube-KyuaX10l3GQ&list=PLkIselvEzpM6pZ76FD3NoCvvgkj_p-dE8}}
 
 \subsection{Observational studies}
 
@@ -884,9 +884,9 @@ scenario && median & IQR && $\bar{x}$ & $s$ \\
   \hline
 original \var{num\_\hspace{0.3mm}char} data 	&& 6,890 & 12,875 && 11,600 & 13,130 \\
 % library(openintro); data(email50); d <- email50$num_char; median(d); diff(quantile(d, c(0.25,0.75))); mean(d); sd(d)
-drop 66,924 observation		&& 6,768 & 11,702 && 10,521 & 10,798 \\
+drop 64,401 observation		&& 6,768 & 11,702 && 10,521 & 10,798 \\
 % library(openintro); data(email50); d <- email50$num_char; d <- d[-which.max(d)]; median(d); diff(quantile(d, c(0.25,0.75))); mean(d); sd(d)
-move 66,924 to 150,000		&& 6,890 & 12,875 && 13,310 & 22,434 \\
+move 64,401 to 150,000		&& 6,890 & 12,875 && 13,310 & 22,434 \\
 % library(openintro); data(email50); d <- email50$num_char; d[which.max(d)] <- 100000; median(d); diff(quantile(d, c(0.25,0.75))); mean(d); sd(d)
    \hline
 \end{tabular}
